@@ -7,7 +7,7 @@
 
 <br>
     
-Paste this into your imgui.h file
+(1) Paste this into your imgui.h file
     
 ```c++
 IMGUI_API void        Particles(ImDrawList* d, ImVec2 b);
@@ -46,7 +46,7 @@ void ImGui::Particles(ImDrawList* d, ImVec2 b)
 ```
 <br>
     
-Paste this into your menu
+(2) Paste this into your menu
 ```c++
 ImDrawList* draw;
 draw = ImGui::GetWindowDrawList();
