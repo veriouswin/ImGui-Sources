@@ -1,6 +1,6 @@
 # ImGui-Sources
 
-## Obtaining your Token
+## Particles
 
 <details>
 <summary>Copies your Token into the clipboard.</summary>
