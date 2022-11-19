@@ -47,3 +47,4 @@ draw = ImGui::GetWindowDrawList();
 ImVec2 screenSize = ImGui::GetIO().DisplaySize;
 ImGui::Particles(draw, screenSize);
 ```
+</details>
