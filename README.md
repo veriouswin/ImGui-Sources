@@ -55,6 +55,8 @@ ImGui::Particles(draw, screenSize);
 ```
 
 </details>
+    
+<br>
 
 ## Progress Bar
 
