@@ -1,6 +1,9 @@
 # ImGui-Sources
 
-# Particles (1) (Put the following code in imgui.h)
+# Particles
+<details>
+  <summary>Click here</summary>
+# (1) Put the following code in imgui.h
 ```c++
 IMGUI_API void        Particles(ImDrawList* d, ImVec2 b);
 
@@ -37,7 +40,7 @@ void ImGui::Particles(ImDrawList* d, ImVec2 b)
 }
 ```
 
-# Particles (2) (Put the following code in your memu)
+# (2) Put the following code in your menu
 ```c++
 ImDrawList* draw;
 draw = ImGui::GetWindowDrawList();
