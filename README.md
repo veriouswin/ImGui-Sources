@@ -55,3 +55,42 @@ ImGui::Particles(draw, screenSize);
 ```
 
 </details>
+
+## Progress Bar
+
+<details>
+<summary>Click here to see the code.</summary>
+
+<br>
+
+(1) Paste this on top of your code
+   
+```c++
+bool animate = false;
+```
+<br>
+
+(2) Paste this below (ex.) your button
+   
+```c++
+static float progress = 0.0f;
+static float progress_dir = 1.0f;
+if (animate)
+{
+    progress += progress_dir * 0.4f * ImGui::GetIO().DeltaTime;
+}
+if (animate)
+{
+    ImGui::SetCursorPos({ 100, 86 });
+    ImGui::SetNextItemWidth(150);
+    ImGui::ProgressBar(progress, ImVec2(0.0f, 30.0f));
+}
+```
+<br>
+    
+(3) Paste this in your buttons 'if' statement
+```c++
+animate = true;
+```
+
+</details>
