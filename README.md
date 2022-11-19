@@ -4,6 +4,20 @@
 ```c++
 IMGUI_API void        Particles(ImDrawList* d, ImVec2 b);
 
+#include <vector>
+int N = 600;
+int lineMaxDist = 1400;
+ImColor lineCol = { 255, 255, 255, 60 };
+float lineThickness = 1.0f;
+
+void setupPoints(std::vector<std::pair<ImVec2, ImVec2>>& n) {
+    ImVec2 screenSize(ImGui::GetIO().DisplaySize);
+    for (auto& p : n)
+        p.second = p.first = ImVec2(rand() % (int)screenSize.x, rand() % (int)screenSize.y);
+}
+
+float length(ImVec2 x) { return x.x * x.x + x.y * x.y; }
+
 void ImGui::Particles(ImDrawList* d, ImVec2 b)
 {
     static std::vector<std::pair<ImVec2, ImVec2>> points(N);
