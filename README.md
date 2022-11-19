@@ -42,23 +42,13 @@ void ImGui::Particles(ImDrawList* d, ImVec2 b)
     }
 }
 ```
-
-The token should be in your clipboard now.
-</details>
-
-# Particles
-<details>
-<summary>Click here</summary>
-# (1) Put the following code in imgui.h
-```c++
-
-```
-
-# (2) Put the following code in your menu
+<br>
+Paste this into your menu
 ```c++
 ImDrawList* draw;
 draw = ImGui::GetWindowDrawList();
 ImVec2 screenSize = ImGui::GetIO().DisplaySize;
 ImGui::Particles(draw, screenSize);
 ```
+
 </details>
