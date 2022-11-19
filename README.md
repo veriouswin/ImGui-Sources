@@ -5,9 +5,9 @@
 <details>
 <summary>Click here to see the code.</summary>
 
-Paste this into your imgui.h file
-
 <br>
+    
+Paste this into your imgui.h file
     
 ```c++
 IMGUI_API void        Particles(ImDrawList* d, ImVec2 b);
